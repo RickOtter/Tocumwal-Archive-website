@@ -2,7 +2,8 @@
 <html>
   <head>
     <title>Tocumwal Archive</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/reset.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,9 +23,9 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="nav-container">
-          <ul class="sidebar">
+      <nav> <!--navigation bar -->
+        <div class="nav-container"> 
+          <ul class="sidebar"> <!--mobile sidebar-->
             <li onclick="hideSidebar()">
               <a href="#" onclick="event.preventDefault();">
                 <svg
@@ -39,7 +40,9 @@
                   </svg>
               </a>
             </li>
-            <li><a href="#" onclick="scrollToBottom(event), hideSidebar()">Contact Us</a></li>
+
+            <!--mobile sidebar links-->
+            <li><a href="#" onclick="scrollToBottom(event), hideSidebar()">Contact Us</a></li> <!--goes to bottom of page-->
             <li><a href="collection.html">Explore the Collection</a></li>
             <li>
               <a
@@ -50,17 +53,11 @@
                   width="24px"
                   fill="currentColor"
                 >
-                  <path
-                    d="M480-371.92 267.69-584.23 296-612.54l184 183.77 184-183.77 28.31 28.31L480-371.92Z"
-                  /></svg>
+                  <path d="M480-371.92 267.69-584.23 296-612.54l184 183.77 184-183.77 28.31 28.31L480-371.92Z"/></svg>
               </a>
-              <ul class="sidebar-dropdown">
+              <ul class="sidebar-dropdown"> <!--mobile sidebar learn the history links-->
                 <li><a href="origins.html">Origins</a></li>
-                <li>
-                  <a href="tocumwal-canberra.html"
-                    >From Tocumwal to Canberra</a
-                  >
-                </li>
+                <li><a href="tocumwal-canberra.html">From Tocumwal to Canberra</a></li>
                 <li><a href="early-years.html">Early years</a></li>
                 <li><a href="parties.html">Parties and pastimes</a></li>
                 <li><a href="changing-patterns.html">Changing patterns</a></li>
@@ -68,7 +65,9 @@
               </ul>
             </li>
           </ul>
-          <ul>
+          
+          <!--desktop navigation links -->
+          <ul> 
             <li class="logo"><a href="index.html">WARCHIVE</a></li>
             <li class="hideOnMobile">
               <a 
@@ -84,23 +83,18 @@
                     d="M480-371.92 267.69-584.23 296-612.54l184 183.77 184-183.77 28.31 28.31L480-371.92Z"/>
                   </svg>
               </a>
-              <ul class="dropdown">
+              <ul class="dropdown"> <!--desktop dropdown items-->
                 <li><a href="origins.html">Origins</a></li>
-                <li>
-                  <a href="tocumwal-canberra.html"
-                    >From Tocumwal to Canberra</a>
-                  
-                </li>
+                <li><a href="tocumwal-canberra.html">From Tocumwal to Canberra</a></li>
                 <li><a href="early-years.html">Early years</a></li>
                 <li><a href="parties.html">Parties and pastimes</a></li>
                 <li><a href="changing-patterns.html">Changing patterns</a></li>
               
               </ul>
             </li>
-            <li class="hideOnMobile">
-              <a href="collection.html">Explore the Collection</a>
-            </li>
-            <li class="hideOnMobile"><a href="#" onclick="scrollToBottom(event)">Contact Us</a></li>
+            <li class="hideOnMobile"> <!--desktop nav items dissapear on mobile-->
+              <a href="collection.html">Explore the Collection</a></li>
+            <li class="hideOnMobile"><a href="#" onclick="scrollToBottom(event)">Contact Us</a></li> <!--goes to bottom of page-->
             <li class="menu-button" onclick="showSidebar()">
               <a href="#" onclick="event.preventDefault();">
                 <svg
@@ -120,17 +114,17 @@
 
     <main>
         
-      <section class="hero"></section>
+      <section class="hero"></section> <!--hero image, separated to allow parallax-->
         <div class="hero-container">
         <div class="hero-text">
-          <h5>1942-2016</h5>
+          <h5>1942-2025</h5>
         </div>
         </div>
       
 
       <section class="content">
         <div class="text-container">
-          <div class="title"><h1>The Tocumwal Archive</h1></div>
+          <div class="title"><h1>The Tocumwal Archive</h1></div> <!--Page title-->
 
           <h3>
             The Tocumwal Archive is a collection of stories and photographs,
@@ -162,7 +156,7 @@
           </p>
         </div>
 
-        <div class="image-container">
+        <div class="image-container"> <!--full width images-->
           <img
             src="images/trove/tocumwal-trove-4.jpg"
             alt="Tocumwal Archive"
@@ -201,6 +195,8 @@
             and hedges. It creates an area of high aesthetic value.
           </p>
         </div>
+
+        <!--prev/next buttons-->
         <h3><div class="button-container">
             <ul>
 
@@ -210,11 +206,9 @@
         </ul>
         </div></h3>
       </section>
-
-      
     </main>
 
-    <footer>
+    <footer> <!-- footer--> 
       <div class="footer-container">
         <div class="footer-text">
             <div class="logo">WARCHIVE</div>
@@ -234,6 +228,7 @@
       </div>
     </footer>
 
+    <!--javascript transitions-->
     <script>
       function showSidebar() {
         document.querySelector(".sidebar").classList.add("active");

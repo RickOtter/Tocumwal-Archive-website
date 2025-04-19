@@ -51,6 +51,4 @@ It helped to troubleshoot errors in my code which would be difficult to locate m
 
 I learnt ways of coding that i wasn't familiar with like changing svg properties, adding a vignette, and creating a parallax effect, and javascript transitions and animations
 
-include the live link to your project (see 10.3 Going online).
-
 _I've only made comments in index.html and style.css (other pages are essentially the same)_
